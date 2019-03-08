@@ -29,7 +29,7 @@ defmodule BlockScoutWeb.BlockController do
         [miner: :names] => :optional,
         :rewards => :optional
       },
-      block_type: "Reorg"
+      block_type: "Atropos"
     ]
     |> handle_render(conn, params)
   end
