@@ -23,7 +23,7 @@
               <%= gettext("Vertices") %>
             <% end %>
             <%= link to: reorg_path(@conn, :reorg), class: "dropdown-item" do %>
-              <%= gettext("Forked Blocks (Reorgs)") %>
+              <%= gettext("Atropos") %>
             <% end %>
           </div>
         </li>
