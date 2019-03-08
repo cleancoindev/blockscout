@@ -23,7 +23,7 @@ defmodule BlockScoutWeb.BlockView do
   end
 
   def block_type(%Block{consensus: false, nephews: []}), do: "Atropos"
-  def block_type(%Block{consensus: false}), do: "Uncle"
+  def block_type(%Block{consensus: false}), do: "Vertice"
   def block_type(_block), do: "Block"
 
   @doc """

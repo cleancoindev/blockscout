@@ -35,7 +35,7 @@ defmodule BlockScoutWeb.BlockViewTest do
       uncle = insert(:block, consensus: false)
       insert(:block_second_degree_relation, uncle_hash: uncle.hash)
 
-      assert BlockView.block_type(uncle) == "Uncle"
+      assert BlockView.block_type(uncle) == "Vertice"
     end
   end
 

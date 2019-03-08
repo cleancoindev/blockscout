@@ -122,5 +122,5 @@ defmodule Explorer.Chain.Block do
     |> where([block, uncles], block.consensus == false and is_nil(uncles.uncle_hash))
   end
 
-  def block_type_filter(query, "Uncle"), do: where(query, [block], block.consensus == false)
+  def block_type_filter(query, "Vertice"), do: where(query, [block], block.consensus == false)
 end

@@ -42,7 +42,7 @@ defmodule BlockScoutWeb.BlockController do
         :nephews => :required,
         :rewards => :optional
       },
-      block_type: "Uncle"
+      block_type: "Vertice"
     ]
     |> handle_render(conn, params)
   end
