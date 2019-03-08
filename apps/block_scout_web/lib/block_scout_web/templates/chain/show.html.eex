@@ -38,7 +38,7 @@
           <% average_block_time -> %>
             <div class="dashboard-banner-network-stats-item">
               <span class="dashboard-banner-network-stats-label">
-                <%= gettext "Average block time" %>
+                <%= gettext "Average finality" %>
               </span>
               <span class="dashboard-banner-network-stats-value" data-selector="average-block-time">
                 <%= Timex.format_duration(average_block_time, Explorer.Counters.AverageBlockTimeDurationFormat) %>

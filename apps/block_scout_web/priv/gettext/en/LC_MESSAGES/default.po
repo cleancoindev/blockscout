@@ -119,7 +119,7 @@ msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/chain/show.html.eex:41
-msgid "Average block time"
+msgid "Average finality"
 msgstr ""
 
 #, elixir-format
