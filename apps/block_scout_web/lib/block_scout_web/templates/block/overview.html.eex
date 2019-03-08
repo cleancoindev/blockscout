@@ -75,7 +75,7 @@
             <%= if length(@block.uncle_relations) > 0 do %>
               <!-- Uncles -->
               <dl class="row mt-3">
-                <dt class="col-sm-3 text-muted"> <%= gettext "Uncles" %> </dt>
+                <dt class="col-sm-3 text-muted"> <%= gettext "Vertices" %> </dt>
                 <dd class="col-sm-9">
                   <%= for {relation, index} <- Enum.with_index(@block.uncle_relations) do %>
                     <%= link(

@@ -13,14 +13,14 @@
             <span class="nav-link-icon">
               <%= render BlockScoutWeb.IconsView, "_block_icon.html" %>
             </span>
-            <%= gettext("Blocks") %>
+            <%= gettext("Event Blocks") %>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarBlocksDropdown">
             <%= link to: block_path(@conn, :index), class: "dropdown-item" do %>
-              <%= gettext("Blocks") %>
+              <%= gettext("Event Blocks") %>
             <% end %>
             <%= link to: uncle_path(@conn, :uncle), class: "dropdown-item" do %>
-              <%= gettext("Uncles") %>
+              <%= gettext("Vertices") %>
             <% end %>
             <%= link to: reorg_path(@conn, :reorg), class: "dropdown-item" do %>
               <%= gettext("Forked Blocks (Reorgs)") %>
