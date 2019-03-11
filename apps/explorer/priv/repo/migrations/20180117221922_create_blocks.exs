@@ -4,7 +4,7 @@ defmodule Explorer.Repo.Migrations.CreateBlocks do
   def change do
     create table(:blocks, primary_key: false) do
       add(:consensus, :boolean, null: false)
-      add(:difficulty, :numeric, precision: 50)
+      add(:difficulty, :numeric, precision: 100)
       add(:gas_limit, :numeric, precision: 100, null: false)
       add(:gas_used, :numeric, precision: 100, null: false)
       add(:hash, :bytea, null: false, primary_key: true)
